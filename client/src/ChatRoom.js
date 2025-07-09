@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import io from "socket.io-client";
 import { decrypt, encrypt } from "./utils/cryptoUtils";
 
-const socket = io("http://localhost:5000"); // Replace if deployed
+const socket = io("vaulttalk.netlify.app"); 
 
 function ChatRoom({ username, roomId }) {
   const [input, setInput] = useState("");
